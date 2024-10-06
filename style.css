@@ -260,16 +260,16 @@ section h2::after {
 /* Education Section */
 #education {
     background-color: #f9f9f9;
-    padding: 50px 0;
-    padding-top: 40px;
+    padding: 60px 0;
+    padding-top: 50px;
     margin-top: 60px;
-
 }
 
 .education-timeline {
     position: relative;
     max-width: 1000px;
     margin: 0 auto;
+    padding: 0 20px;
 }
 
 .education-timeline::after {
@@ -284,7 +284,7 @@ section h2::after {
 }
 
 .education-item {
-    padding: 10px 40px;
+    padding: 20px 40px;
     position: relative;
     background-color: inherit;
     width: 50%;
@@ -529,15 +529,29 @@ section h2::after {
     .education-item {
         width: 100%;
         padding-left: 70px;
-        padding-right: 25px;
+        padding-right: 10px;
+        padding-top: 30px;
+        padding-bottom: 30px;
     }
 
     .education-item::after {
         left: 15px;
+        top: 30px;
     }
 
     .education-item:nth-child(even) {
         left: 0%;
+    }
+
+    .education-item:nth-child(even)::after {
+        left: 15px;
+    }
+
+    .education-content {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+        padding: 25px;
     }
 }
 
@@ -556,6 +570,14 @@ section h2::after {
 
     #home .content p {
         font-size: 1em;
+    }
+
+    main {
+        padding-top: 90px;
+    }
+
+    #home {
+        padding-top: 60px;
     }
 }
 
@@ -708,9 +730,94 @@ section h2::after {
 .skill-category li i {
     font-size: 1.5em;
     margin-right: 15px;
-    color: #007BFF;
     width: 30px;
     text-align: center;
+}
+
+/* Programming Languages */
+.skill-category li i.devicon-cplusplus-plain {
+    color: #00599C;
+}
+
+.skill-category li i.fa-java {
+    color: #007396;
+}
+
+.skill-category li i.fa-python {
+    color: #3776AB;
+}
+
+.skill-category li i.fa-microchip {
+    color: #4CAF50;
+}
+
+/* Web Development */
+.skill-category li i.fa-html5 {
+    color: #E34F26;
+}
+
+.skill-category li i.fa-css3-alt {
+    color: #1572B6;
+}
+
+.skill-category li i.fa-js {
+    color: #F7DF1E;
+}
+
+.skill-category li i.fa-php {
+    color: #777BB4;
+}
+
+/* Frameworks & Libraries */
+.skill-category li i.fa-react {
+    color: #61DAFB;
+}
+
+.skill-category li i.fa-node-js {
+    color: #339933;
+}
+
+.skill-category li i.devicon-nextjs-original {
+    color: #000000;
+}
+
+.skill-category li i.devicon-nestjs-plain {
+    color: #E0234E;
+}
+
+/* Databases */
+.skill-category li i.fa-database {
+    color: #4479A1;
+
+}
+
+.skill-category li i.devicon-mongodb-plain {
+    color: #47A248;
+}
+
+.skill-category li i.devicon-postgresql-plain {
+    color: #336791;
+}
+
+.skill-category li i.devicon-oracle-original {
+    color: #F80000;
+}
+
+/* Tools & Technologies */
+.skill-category li i.fa-git-alt {
+    color: #F05032;
+}
+
+.skill-category li i.fa-docker {
+    color: #2496ED;
+}
+
+.skill-category li i.fa-linux {
+    color: #FCC624;
+}
+
+.skill-category li i.devicon-vscode-plain {
+    color: #007ACC;
 }
 
 /* Contact Section */
