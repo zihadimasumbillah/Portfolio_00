@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Masum Billah Zihadi - Personal Portfolio</title>
+
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+</head>
+
+<body>
+  <!-- Navigation -->
+  <nav>
+    <div class="logo">
+      <img src="img/logo.png" alt="Logo">
+    </div>
+    <input type="checkbox" id="menu-toggle" class="menu-toggle-checkbox">
+    <label for="menu-toggle" class="menu-toggle-label">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+    <ul>
+      <li><a href="#home"><i class="fas fa-home"></i> Home</a></li>
+      <li><a href="#education"><i class="fas fa-graduation-cap"></i> Education</a></li>
+      <li><a href="#projects"><i class="fas fa-project-diagram"></i> Projects</a></li>
+      <li><a href="#skills"><i class="fas fa-code"></i> Skills</a></li>
+      <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
+    </ul>
+    <a href="#" class="btn">Resume</a>
+  </nav>
+
+  <main>
+    <!-- Home Section -->
+    <section id="home">
+      <div class="content">
+        <h1>
+          <span class="static-text">Hello, I'm </span>
+          <span class="name fade-in">Masum Billah Zihadi</span>
+        </h1>
+        <p class="description fade-in">
+          I am an aspiring computer science student with high motivation, strong work ethics, and a keen interest in
+          pushing myself to produce the best output.
+        </p>
+      </div>
+      <div class="headshot">
+        <img src="img/bg-main.jpg" alt="Masum Billah Zihadi headshot">
+      </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education">
+      <h2><i class="fas fa-graduation-cap"></i> Education</h2>
+      <div class="education-timeline">
+        <div class="education-item">
+          <div class="education-content">
+            <img src="./img/aiub.jpg" alt="AIUB Logo">
+            <h3>Bachelor of Science (B.Sc.) in Computer Science</h3>
+            <p>American International University Of Bangladesh</p>
+            <p class="education-date">2020 - 2024</p>
+          </div>
+        </div>
+        <div class="education-item">
+          <div class="education-content">
+            <img src="./img/yasin.jpg" alt="Yasin College Logo">
+            <h3>Higher Secondary (School) Certificate (H.S.C)</h3>
+            <p>Govt. Yasin College, Faridpur</p>
+            <p class="education-date">2018 - 2020</p>
+          </div>
+        </div>
+        <div class="education-item">
+          <div class="education-content">
+            <img src="./img/zilla.jpg" alt="Zilla School Logo">
+            <h3>Secondary School Certificate (S.S.C)</h3>
+            <p>Faridpur Zilla School, Faridpur</p>
+            <p class="education-date">2012 - 2017</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+      <h2><i class="fas fa-project-diagram"></i> Projects</h2>
+      <div class="projects-container">
+        <div class="project-card">
+          <div class="project-image">
+            <img src="img/p1.png" alt="Portfolio Website">
+          </div>
+          <div class="project-info">
+            <h3>Portfolio Website</h3>
+            <p>A personal portfolio website showcasing my work and skills.</p>
+            <div class="project-tech">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="btn" target="_blank"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+              <a href="#" class="btn" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-image">
+            <img src="img/p2.png" alt="Todo List Application">
+          </div>
+          <div class="project-info">
+            <h3>Todo List Application</h3>
+            <p>A simple web-based todo list app built with JavaScript.</p>
+            <div class="project-tech">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="btn" target="_blank"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+              <a href="#" class="btn" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+            </div>
+          </div>
+        </div>
+
+
+
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+      <h2><i class="fas fa-code"></i> Skills</h2>
+      <div class="skills-container">
+        <div class="skill-category">
+          <h3>Programming Languages</h3>
+          <ul>
+            <li><i class="devicon-cplusplus-plain colored"></i> C++</li>
+            <li><i class="fab fa-java"></i> Java</li>
+            <li><i class="fab fa-python"></i> Python</li>
+            <li><i class="fas fa-microchip"></i> 8086 Assembly</li>
+          </ul>
+        </div>
+        <div class="skill-category">
+          <h3>Web Development</h3>
+          <ul>
+            <li><i class="fab fa-html5"></i> HTML5</li>
+            <li><i class="fab fa-css3-alt"></i> CSS3</li>
+            <li><i class="fab fa-js-square"></i> JavaScript</li>
+            <li><i class="fab fa-php"></i> PHP</li>
+          </ul>
+        </div>
+        <div class="skill-category">
+          <h3>Frameworks & Libraries</h3>
+          <ul>
+            <li><i class="fab fa-react"></i> React</li>
+            <li><i class="fab fa-node-js"></i> Node.js</li>
+            <li><i class="devicon-nextjs-original colored"></i> Next.js</li>
+            <li><i class="devicon-nestjs-plain colored"></i> Nest.js</li>
+          </ul>
+        </div>
+        <div class="skill-category">
+          <h3>Databases</h3>
+          <ul>
+            <li><i class="fas fa-database"></i> MySQL</li>
+            <li><i class="devicon-mongodb-plain colored"></i> MongoDB</li>
+            <li><i class="devicon-postgresql-plain colored"></i> PostgreSQL</li>
+            <li><i class="devicon-oracle-original colored"></i> Oracle</li>
+          </ul>
+        </div>
+        <div class="skill-category">
+          <h3>Tools & Technologies</h3>
+          <ul>
+            <li><i class="fab fa-git-alt"></i> Git</li>
+            <li><i class="fab fa-docker"></i> Docker</li>
+            <li><i class="fab fa-linux"></i> Linux</li>
+            <li><i class="devicon-vscode-plain colored"></i> VS Code</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <!-- Contact Section -->
+    <section id="contact">
+      <h2><i class="fas fa-envelope"></i> Contact</h2>
+      <div class="contact-container">
+        <div class="contact-info">
+          <p class="get-in-touch">
+            Get in touch with me <i class="fas fa-arrow-right"></i>
+            <a href="mailto:zihadimasumbillah@gmail.com" class="contact-email">
+              zihadimasumbillah@gmail.com
+            </a>
+          </p>
+        </div>
+        <div class="social-links">
+          <p>Or find me on:</p>
+          <div class="social-icons">
+            <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="footer-content">
+      <p>&copy; 2024 All Rights Reserved by <span>MASUM BILLAH ZIHADI</span></p>
+    </div>
+  </footer>
+</body>
+
+</html>
