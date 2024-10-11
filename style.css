@@ -1,3 +1,4 @@
+/* Global Styles */
 * {
     margin: 0;
     padding: 0;
@@ -16,7 +17,7 @@ body {
     background-color: #fff;
 }
 
-/* Navigation Bar Styles */
+/* Navigation Styles */
 nav {
     display: flex;
     justify-content: space-between;
@@ -347,247 +348,6 @@ section h2::after {
     font-style: italic;
     color: #6c757d;
     margin-top: 10px;
-}
-
-/* Responsive adjustments */
-@media (max-width: 992px) {
-    nav {
-        flex-wrap: wrap;
-        justify-content: space-between;
-        padding: 10px 3%;
-        height: 60px;
-
-    }
-
-    nav .logo {
-        width: 40px;
-        height: 40px;
-    }
-
-    nav .menu-toggle-label {
-        display: flex;
-        order: 1;
-    }
-
-    nav ul {
-        display: none;
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-        background-color: #fff;
-        order: 3;
-        margin: 10px 0 0;
-    }
-
-    nav .menu-toggle-checkbox:checked~ul {
-        display: flex;
-    }
-
-    nav ul li {
-        margin: 10px 0;
-    }
-
-    nav .btn {
-        order: 2;
-        margin-left: auto;
-    }
-
-    main {
-        padding-top: 80px;
-        padding-left: 5%;
-        padding-right: 5%;
-    }
-
-    section {
-        padding: 60px 0 40px;
-        margin-bottom: 40px;
-    }
-
-    #home {
-        flex-direction: column-reverse;
-        text-align: center;
-        padding: 80px 20px 40px;
-        margin-bottom: 40px;
-    }
-
-    #home .content,
-    #home .headshot {
-        flex: none;
-        width: 100%;
-    }
-
-    #home .headshot img {
-        width: 250px;
-        margin-bottom: 30px;
-    }
-
-    #home .content h1 {
-        font-size: 2em;
-    }
-
-    #home {
-        flex-direction: column-reverse;
-        text-align: center;
-        padding: 0 20px;
-    }
-
-    #home .content,
-    #home .headshot {
-        flex: 1;
-    }
-
-    #home .headshot img {
-        width: 250px;
-    }
-
-    #skills {
-        padding-bottom: 30px;
-    }
-
-    .skill-category {
-        width: calc(50% - 30px);
-    }
-
-    section {
-        padding: 40px 0;
-
-    }
-
-    #contact {
-        padding: 40px 0 30px;
-    }
-
-    .project-card,
-    .skill-category {
-        width: 100%;
-    }
-
-    #skills ul li {
-        flex-direction: column;
-        text-align: center;
-        padding: 20px;
-    }
-
-    #skills ul li i {
-        margin-right: 0;
-        margin-bottom: 10px;
-    }
-
-    section h2 {
-        font-size: 1.8em;
-    }
-
-    #contact .contact-info {
-        align-items: center;
-    }
-
-    main {
-        padding-top: 70px;
-
-    }
-
-    section {
-        padding-top: 20px;
-        margin-bottom: 30px;
-    }
-
-    #education {
-        margin-top: 40px;
-
-    }
-}
-
-@media screen and (max-width: 768px) {
-    .get-in-touch {
-        font-size: 1.2em;
-        flex-direction: column;
-    }
-
-    .get-in-touch i {
-        margin: 10px 0;
-    }
-
-    .contact-email {
-        font-size: 0.9em;
-    }
-
-    .social-links p {
-        font-size: 1.1em;
-    }
-
-    .social-icons {
-        gap: 20px;
-    }
-
-    .social-icons a {
-        font-size: 24px;
-    }
-
-    .education-timeline::after {
-        left: 31px;
-    }
-
-    .education-item {
-        width: 100%;
-        padding-left: 70px;
-        padding-right: 10px;
-        padding-top: 30px;
-        padding-bottom: 30px;
-    }
-
-    .education-item::after {
-        left: 15px;
-        top: 30px;
-    }
-
-    .education-item:nth-child(even) {
-        left: 0%;
-    }
-
-    .education-item:nth-child(even)::after {
-        left: 15px;
-    }
-
-    .education-content {
-        width: 100%;
-        margin-left: 0;
-        margin-right: 0;
-        padding: 25px;
-    }
-}
-
-@media (max-width: 576px) {
-
-    #home p,
-    #education ul li,
-    #skills ul li,
-    #contact p {
-        font-size: 1em;
-    }
-
-    #home .content h1 {
-        font-size: 1.8em;
-    }
-
-    #home .content p {
-        font-size: 1em;
-    }
-
-    main {
-        padding-top: 70px;
-    }
-
-    #home {
-        padding-top: 60px;
-    }
-
-    html {
-        scroll-padding-top: 70px;
-    }
-
-    section {
-        padding: 50px 0 30px;
-    }
 }
 
 /* Projects Section */
@@ -999,6 +759,7 @@ section h2::after {
     transform: translateY(-5px);
 }
 
+/* Footer Styles */
 footer {
     color: #007BFF;
     background-color: #f8f9fa;
@@ -1020,4 +781,245 @@ footer p {
 
 main>section:last-of-type {
     margin-bottom: 0;
+}
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+    nav {
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 10px 3%;
+        height: 60px;
+
+    }
+
+    nav .logo {
+        width: 40px;
+        height: 40px;
+    }
+
+    nav .menu-toggle-label {
+        display: flex;
+        order: 1;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        background-color: #fff;
+        order: 3;
+        margin: 10px 0 0;
+    }
+
+    nav .menu-toggle-checkbox:checked~ul {
+        display: flex;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    nav .btn {
+        order: 2;
+        margin-left: auto;
+    }
+
+    main {
+        padding-top: 80px;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    section {
+        padding: 60px 0 40px;
+        margin-bottom: 40px;
+    }
+
+    #home {
+        flex-direction: column-reverse;
+        text-align: center;
+        padding: 80px 20px 40px;
+        margin-bottom: 40px;
+    }
+
+    #home .content,
+    #home .headshot {
+        flex: none;
+        width: 100%;
+    }
+
+    #home .headshot img {
+        width: 250px;
+        margin-bottom: 30px;
+    }
+
+    #home .content h1 {
+        font-size: 2em;
+    }
+
+    #home {
+        flex-direction: column-reverse;
+        text-align: center;
+        padding: 0 20px;
+    }
+
+    #home .content,
+    #home .headshot {
+        flex: 1;
+    }
+
+    #home .headshot img {
+        width: 250px;
+    }
+
+    #skills {
+        padding-bottom: 30px;
+    }
+
+    .skill-category {
+        width: calc(50% - 30px);
+    }
+
+    section {
+        padding: 40px 0;
+
+    }
+
+    #contact {
+        padding: 40px 0 30px;
+    }
+
+    .project-card,
+    .skill-category {
+        width: 100%;
+    }
+
+    #skills ul li {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+
+    #skills ul li i {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    section h2 {
+        font-size: 1.8em;
+    }
+
+    #contact .contact-info {
+        align-items: center;
+    }
+
+    main {
+        padding-top: 70px;
+
+    }
+
+    section {
+        padding-top: 20px;
+        margin-bottom: 30px;
+    }
+
+    #education {
+        margin-top: 40px;
+
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .get-in-touch {
+        font-size: 1.2em;
+        flex-direction: column;
+    }
+
+    .get-in-touch i {
+        margin: 10px 0;
+    }
+
+    .contact-email {
+        font-size: 0.9em;
+    }
+
+    .social-links p {
+        font-size: 1.1em;
+    }
+
+    .social-icons {
+        gap: 20px;
+    }
+
+    .social-icons a {
+        font-size: 24px;
+    }
+
+    .education-timeline::after {
+        left: 31px;
+    }
+
+    .education-item {
+        width: 100%;
+        padding-left: 70px;
+        padding-right: 10px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .education-item::after {
+        left: 15px;
+        top: 30px;
+    }
+
+    .education-item:nth-child(even) {
+        left: 0%;
+    }
+
+    .education-item:nth-child(even)::after {
+        left: 15px;
+    }
+
+    .education-content {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+        padding: 25px;
+    }
+}
+
+@media (max-width: 576px) {
+
+    #home p,
+    #education ul li,
+    #skills ul li,
+    #contact p {
+        font-size: 1em;
+    }
+
+    #home .content h1 {
+        font-size: 1.8em;
+    }
+
+    #home .content p {
+        font-size: 1em;
+    }
+
+    main {
+        padding-top: 70px;
+    }
+
+    #home {
+        padding-top: 60px;
+    }
+
+    html {
+        scroll-padding-top: 70px;
+    }
+
+    section {
+        padding: 50px 0 30px;
+    }
 }
